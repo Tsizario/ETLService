@@ -1,4 +1,4 @@
-﻿namespace HT_1.Services.Abstraction;
+﻿namespace ETLService.Services.Abstraction;
 
 public interface ILogger
 {

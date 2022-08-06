@@ -1,13 +1,12 @@
 ﻿using ETLService.Models;
-using ETLService.Models.InputModels;
 using ETLService.Models.OutputModels;
-using ETLService.Services.Extentions;
 using ETLService.Services.Abstraction;
+using ETLService.Services.Extensions;
 using ETLService.Services.Templates;
-using System.Text;
+using HT_1.Services.Extentions;
 using Newtonsoft.Json;
 
-namespace HT_1.Services.Implementations;
+namespace ETLService.Services.Implementations;
 
 public class EtlService: IEtlService
 {

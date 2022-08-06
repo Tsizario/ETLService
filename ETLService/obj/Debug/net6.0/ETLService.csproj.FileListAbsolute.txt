@@ -46,3 +46,4 @@ E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\refint\ETLService.dl
 E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\ETLService.pdb
 E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\ETLService.genruntimeconfig.cache
 E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\ref\ETLService.dll
+E:\Big Data\Projects\ETLService\ETLService\bin\Debug\net6.0\appsettings.json

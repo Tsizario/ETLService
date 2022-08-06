@@ -7,4 +7,13 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Models\InputModels" />
+      <Folder Include="Models\OutputModels" />
+      <Folder Include="Services\Abstraction" />
+      <Folder Include="Services\Extensions" />
+      <Folder Include="Services\Implementations" />
+      <Folder Include="Services\Templates" />
+    </ItemGroup>
+
 </Project>

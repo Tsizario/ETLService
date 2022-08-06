@@ -1,4 +1,5 @@
 ﻿using ETLService.Models.InputModels;
+using System.Globalization;
 
 namespace ETLService.Services.Abstraction;
 
@@ -24,7 +25,7 @@ public abstract class Parser
         var errorsSum = 0;
         var transactions = new List<Transaction>();
 
-        var validData = data.Split("\n").Where(x => !string.IsNullOrEmpty(x));
+        var validData = data.Split("\n").Where(x => !string.IsNullOrWhiteSpace(x));
 
         Parallel.ForEach(validData, x =>
         {
@@ -37,22 +38,27 @@ public abstract class Parser
                 x = x.Replace(address, string.Empty);
                 var array = x.Split(separator).Select(x => x.Trim()).ToArray();
 
+                var payment = Convert.ToDecimal(array[3], CultureInfo.InvariantCulture);
+                var date = DateTime.ParseExact(array[4], "yyyy-dd-MM", null);
+                var an = Convert.ToInt64(array[5]);
+
                 var transaction = new Transaction()
                 {
                     FirstName = array[0],
                     LastName = array[1],
-                    Address = array[2],
-                    Payment = Convert.ToDecimal(array[3]),
-                    Date = DateTime.ParseExact(array[4], "yyyy-dd-MM", null),
-                    AccountNumber = Convert.ToInt64(array[5]),
+                    Address = address,
+                    Payment = payment,
+                    Date = date,
+                    AccountNumber = an,
                     Service = array[6]
                 };
 
                 transactions.Add(transaction);
                 parsedLinesSum++;
             }
-            catch
+            catch(Exception e)
             {
+
                 errorsSum++;
             }
         });

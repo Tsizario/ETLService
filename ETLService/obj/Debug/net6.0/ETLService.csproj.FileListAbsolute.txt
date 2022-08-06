@@ -1,0 +1,5 @@
+E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\ETLService.csproj.AssemblyReference.cache
+E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\ETLService.GeneratedMSBuildEditorConfig.editorconfig
+E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\ETLService.AssemblyInfoInputs.cache
+E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\ETLService.AssemblyInfo.cs
+E:\Big Data\Projects\ETLService\ETLService\obj\Debug\net6.0\ETLService.csproj.CoreCompileInputs.cache

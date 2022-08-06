@@ -51,8 +51,6 @@ public class Startup
 		_log.Info("To reset press 'R'");
 		_log.Info("To stop press 'S'");
 
-		OnDayChanged();
-
 		while (true)
 		{
 			var key = Console.ReadKey();
